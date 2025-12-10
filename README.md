@@ -55,4 +55,4 @@ cd mobile && flutter build ios
 
 ## License
 
-MIT
+Apache 2.0
