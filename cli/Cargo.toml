@@ -1,0 +1,21 @@
+[package]
+name = "omniclip-cli"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "CLI for Omniclip cross-platform clipboard sync"
+
+[[bin]]
+name = "omniclip"
+path = "src/main.rs"
+
+[dependencies]
+omniclip-core = { path = "../core" }
+tokio.workspace = true
+tracing.workspace = true
+tracing-subscriber.workspace = true
+clap = { version = "4.5", features = ["derive"] }
+anyhow = "1.0"
+qrcode = "0.14"
+ctrlc = "3.4"
+hostname.workspace = true
