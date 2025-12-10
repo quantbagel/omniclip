@@ -1,0 +1,39 @@
+[package]
+name = "omniclip-core"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Cross-platform clipboard sync library"
+
+[lib]
+crate-type = ["lib", "cdylib"]
+name = "omniclip_core"
+
+[dependencies]
+tokio.workspace = true
+x25519-dalek.workspace = true
+ed25519-dalek.workspace = true
+aes-gcm.workspace = true
+sha2.workspace = true
+rand.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+bincode.workspace = true
+mdns-sd.workspace = true
+arboard.workspace = true
+qrcode.workspace = true
+thiserror.workspace = true
+tracing.workspace = true
+base64.workspace = true
+uuid.workspace = true
+uniffi.workspace = true
+dirs.workspace = true
+urlencoding.workspace = true
+hostname.workspace = true
+get_if_addrs.workspace = true
+
+[build-dependencies]
+uniffi = { workspace = true, features = ["build"] }
+
+[dev-dependencies]
+tokio-test = "0.4"
