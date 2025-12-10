@@ -1,0 +1,23 @@
+# Rust
+/target/
+Cargo.lock
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# macOS
+.DS_Store
+
+# Build artifacts
+*.dylib
+*.so
+*.dll
+
+# Mobile build directories (future)
+/android/app/build/
+/ios/build/
+/ios/Pods/

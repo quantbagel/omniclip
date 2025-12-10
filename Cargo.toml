@@ -1,0 +1,52 @@
+[workspace]
+resolver = "2"
+members = ["core", "cli"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/bagel/omniclip"
+
+[workspace.dependencies]
+# Async runtime
+tokio = { version = "1.41", features = ["full"] }
+
+# Cryptography
+x25519-dalek = { version = "2.0", features = ["static_secrets"] }
+ed25519-dalek = { version = "2.1", features = ["rand_core"] }
+aes-gcm = "0.10"
+sha2 = "0.10"
+rand = "0.8"
+
+# Serialization
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+bincode = "1.3"
+
+# Discovery
+mdns-sd = "0.11"
+
+# Clipboard
+arboard = "3.4"
+
+# QR code generation
+qrcode = "0.14"
+
+# Utilities
+thiserror = "2.0"
+dirs = "5.0"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+base64 = "0.22"
+uuid = { version = "1.11", features = ["v4", "serde"] }
+urlencoding = "2.1"
+hostname = "0.4"
+get_if_addrs = "0.5"
+
+# UniFFI for mobile bindings
+uniffi = "0.28"
+
+# CLI
+clap = { version = "4.5", features = ["derive"] }
+qrcode-terminal = "0.1"
