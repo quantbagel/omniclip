@@ -1,0 +1,41 @@
+name: omniclip
+description: "Cross-platform clipboard sync"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.3
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  # QR code scanning
+  mobile_scanner: ^7.0.0
+
+  # Cryptography
+  cryptography: ^2.7.0
+
+  # UUID generation
+  uuid: ^4.5.1
+
+  # State management
+  provider: ^6.1.2
+
+  # Clipboard (using built-in Flutter clipboard for now)
+
+  # Local storage
+  shared_preferences: ^2.5.3
+
+  # Permissions
+  permission_handler: ^12.0.0+1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
